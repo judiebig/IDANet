@@ -1,0 +1,91 @@
+start logging time:	2021-08-03 10:50:50
+{
+    "log_path": "results/logs/",
+    "epochs": 30,
+    "save_path": "results/",
+    "model": {
+        "module": "models.IDANet",
+        "main": "IDANet",
+        "args": {}
+    },
+    "loss_function": {
+        "module": "tools.loss",
+        "main": "MaeLoss",
+        "args": {}
+    },
+    "trainer": {
+        "module": "trainer.train_mag",
+        "main": "TrainMag",
+        "args": {}
+    },
+    "train_dataset": {
+        "module": "tools.dataset_TIMIT",
+        "main": "DatasetTIMIT",
+        "args": {
+            "mixture_path": "/home/aone/twx/code_learning/SENet/datasets/TIMIT/16k_DARCN/noisy/train",
+            "clean_path": "/home/aone/twx/code_learning/SENet/datasets/TIMIT/16k/clean/train",
+            "is_check": true
+        }
+    },
+    "validation_dataset": {
+        "module": "tools.dataset_TIMIT",
+        "main": "DatasetTIMIT",
+        "args": {
+            "mixture_path": "/home/aone/twx/code_learning/SENet/datasets/TIMIT/16k_DARCN/noisy/eval",
+            "clean_path": "/home/aone/twx/code_learning/SENet/datasets/TIMIT/16k/clean/train",
+            "is_check": true
+        }
+    },
+    "train_dataloader": {
+        "shuffle": true,
+        "num_workers": 8,
+        "batch_size": 2
+    },
+    "validation_dataloader": {
+        "shuffle": false,
+        "num_workers": 8,
+        "batch_size": 2
+    },
+    "optimizer": {
+        "lr": 0.0002,
+        "beta1": 0.9
+    },
+    "stft_parameter": {
+        "win_len": 320,
+        "hop_len": 160
+    },
+    "pre_train_dataset": {
+        "module": "tools.pre_dataset_TIMIT",
+        "main": "pre_DatasetTIMIT",
+        "args": {
+            "mixture_path": "/home/aone/twx/code_learning/SENet/new_datasets/TIMIT/8k/noisy/train",
+            "synthesize_path": "/home/aone/twx/code_learning/SENet/new_datasets/TIMIT/8k/preprocess/train",
+            "clean_path": "/home/aone/twx/code_learning/SENet/new_datasets/TIMIT/8k/clean/train"
+        }
+    },
+    "pre_validation_dataset": {
+        "module": "tools.pre_dataset_TIMIT",
+        "main": "pre_DatasetTIMIT",
+        "args": {
+            "mixture_path": "/home/aone/twx/code_learning/SENet/new_datasets/TIMIT/8k/noisy/eval",
+            "synthesize_path": "/home/aone/twx/code_learning/SENet/new_datasets/TIMIT/8k/preprocess/eval",
+            "clean_path": "/home/aone/twx/code_learning/SENet/new_datasets/TIMIT/8k/clean/eval"
+        }
+    },
+    "pre_train_dataloader": {
+        "shuffle": true,
+        "num_workers": 4,
+        "batch_size": 2
+    },
+    "pre_validation_dataloader": {
+        "shuffle": false,
+        "num_workers": 4,
+        "batch_size": 2
+    },
+    "pre_trainer": {
+        "module": "trainer.pre_train_mag",
+        "main": "pre_TrainMag",
+        "args": {}
+    }
+}
+The amount of parameters in the project is 0.681234 million.
