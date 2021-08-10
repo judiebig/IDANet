@@ -1,4 +1,4 @@
-# PIE-CL
+# IDANet
 
 ![](https://img.shields.io/badge/python-3.7-green)
 ![](https://img.shields.io/badge/pytorch-1.6-green)
