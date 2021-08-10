@@ -14,6 +14,10 @@ This repo provides a reference implementation of **IDANet** as described in the 
 
 > Submitted for review (SPL) 
 
+## data preprosessing
+
+105 types of noise are concatenated for training and validation, while 110 types of noise for testing (add 5 unseen noises).
+
 ## Contact
 
 For any questions (as well as request for the pdf version) please open an issue or drop an email to: `wxtai@std.uestc.edu.cn`
