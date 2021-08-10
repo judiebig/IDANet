@@ -1,5 +1,5 @@
 """
-Nonspeech dataset from Ohio State University
+105 types of noise are concatenated for training and validation, while 110 types of noise for testing (add 5 unseen noises).
 """
 
 import os
