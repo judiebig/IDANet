@@ -20,6 +20,8 @@ This repo provides a reference implementation of **IDANet** as described in the 
 
 The model's code we use for DARCN is from their official depository (https://github.com/Andong-Li-speech/DARCN). For CRN, we use an unofficial code implemented from https://github.com/haoxiangsnr/A-Convolutional-Recurrent-Neural-Network-for-Real-Time-Speech-Enhancement. Since GRN did not publish their code, we reproduce it according to the original paper. 
 
+The  experimental platform  is  Ubuntu  LTS  18.04  with  i7-9700  and  RTX  2060.
+
 
 ## Contact
 
