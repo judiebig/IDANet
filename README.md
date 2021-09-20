@@ -12,7 +12,7 @@ This repo provides a reference implementation of **IDANet** as described in the 
 
 > IDANet: An Information Distillation and Aggregation Network for Speech Enhancement
 
-> Submitted for review (SPL) 
+> Accepted by SPL
 
 ## data preprosessing
 
