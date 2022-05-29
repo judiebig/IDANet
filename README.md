@@ -39,4 +39,4 @@ If you find the code useful for your research, please consider citing
 
 ## Contact
 
-For any questions (as well as request for the pdf version) please open an issue or drop an email to: `wxtai@std.uestc.edu.cn`
+For any questions please open an issue or drop an email to: `wxtai@std.uestc.edu.cn`
